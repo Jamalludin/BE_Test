@@ -283,7 +283,8 @@ class CandidateController extends Controller
                 'instagram' => $request['instagram'],
                 'twitter' => $request['twitter'],
                 'linkedin' => $request['linkedin'],
-                'facebook' => $request['facebook']
+                'facebook' => $request['facebook'],
+                'candidate_status_id' => $request['candidate_status_id']
             ]);
 
             $candidates_org = Organization::where('candidate_id', $id);
